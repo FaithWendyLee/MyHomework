@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" metadata-complete="false" version="3.0">
+  <display-name>MyHomework</display-name>
+  <servlet>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>servlets.teacher.ShowFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ShowFileServlet</servlet-name>
+    <servlet-class>servlets.teacher.ShowFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowFileServlet</servlet-name>
+    <url-pattern>/ShowFileServlet</url-pattern>
+  </servlet-mapping>
+
+  
+  <servlet>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>servlets.teacher.DownLoadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/DownLoadServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
